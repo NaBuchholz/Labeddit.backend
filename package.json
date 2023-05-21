@@ -27,8 +27,9 @@
 		"typescript": "^5.0.4"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "clear && node ./index.ts"
+		"start": "node ./build/index.js",
+		"build": "tsc",
+		"dev": "ts-node-dev ./src/index.ts"
 	},
 	"repository": {
 		"type": "git",
